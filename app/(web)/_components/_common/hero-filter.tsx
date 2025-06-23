@@ -30,15 +30,15 @@ export default function SimpleFilterBox() {
     <div className="w-full max-w-xl mx-auto mt-10 bg-gray-700/70 p-6 rounded-xl shadow-md border border-gray-200">
 
 
-      {/* البحث والنوع */}
+      
       <div className="space-y-4">
-        <Input
+        {/* <Input
           placeholder="Search for your car"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSearch()}
           className="bg-gray-100"
-        />
+        /> */}
 
 
 
@@ -47,7 +47,7 @@ export default function SimpleFilterBox() {
           className="w-full bg-red-600 hover:bg-red-500 text-white"
         >
           <Search className="w-4 h-4 mr-2" />
-          Search
+          Advanced Search
         </Button>
       </div>
     </div>

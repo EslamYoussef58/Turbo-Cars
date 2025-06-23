@@ -32,7 +32,7 @@ const CarListing = () => {
               disabled={isPending}
               key={index}
               className={cn(
-                `text-gray-700 transition mb-2 font-medium whitespace-nowrap
+                `text-gray-200 transition mb-2 font-medium whitespace-nowrap
                         px-3 border-b-2 border-transparent
                         hover:border-[#dc2626] hover:text-[#dc2626]
                         `,
