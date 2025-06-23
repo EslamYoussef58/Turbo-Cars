@@ -6,8 +6,8 @@ import { motion, useScroll, useTransform, Variants } from 'framer-motion';
 import HeroFilter from './_common/hero-filter';
 
 const HeroSection = () => {
-  const fullTitle = "Your Car, Our Expertise";
-  const subtitle = "Seamless Service, Exceptional Results";
+  const fullTitle = "Find Your Car";
+ 
 
   const containerRef = useRef(null);
 
@@ -50,7 +50,7 @@ const HeroSection = () => {
     }),
   };
 
-  const subtitleWords = subtitle.split(" ");
+  // const subtitleWords = subtitle.split(" ");
 
   return (
     <motion.section
@@ -109,7 +109,7 @@ const HeroSection = () => {
                 </div>
               </h1>
 
-              <motion.p
+              {/* <motion.p
                 className="text-lg sm:text-xl md:text-2xl font-medium bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent select-none"
                 initial="hidden"
                 animate="visible"
@@ -126,7 +126,7 @@ const HeroSection = () => {
                     {wordIdx < subtitleWords.length - 1 && "\u00A0"}
                   </React.Fragment>
                 ))}
-              </motion.p>
+              </motion.p> */}
 
               <motion.div
                 className="pt-4"
