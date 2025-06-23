@@ -157,7 +157,7 @@ const AddListing = () => {
     <main className="container mx-auto px-4 pt-3 pb-8">
       <div className="max-w-4xl mx-auto pt-5">
         <Card className="!bg-transparent shadow-none border-none">
-          <CardHeader className="flex items-center justify-center bg-[#0f172a] text-[#dc2626] rounded-[8px] p-4 mb-4">
+          <CardHeader className="flex items-center justify-center bg-[#0f172a] text-white rounded-[8px] p-4 mb-4">
             <CardTitle className="font-semibold text-xl">Add Listing</CardTitle>
           </CardHeader>
           <CardContent className="bg-[#0f172a] rounded-[8px] p-4 px-6 pb-8">
@@ -170,10 +170,10 @@ const AddListing = () => {
                   >
                     {/* {images upload} */}
                     <div className="space-y-2 pt-3">
-                      <h2 className="text-sm font-semibold text-[#dc2626] ">
+                      <h2 className="text-sm font-semibold text-white ">
                         Add Photo
                       </h2>
-                      <div className="text-sm text-red-700 font-light">
+                      <div className="text-sm text-gray-400  font-light">
                         <div>Add at least 3 photos for this listing</div>
                         First picture - is the title picture.
                       </div>
@@ -183,8 +183,8 @@ const AddListing = () => {
                         <FileUploader
                           onFileUrlsReceived={handleImageUrls}
                         >
-                          <ScrollArea className="w-96 whitespace-nowrap ml-3">
-                            <div className="w-full flex  space-x-4 items-center h-20">
+                          <ScrollArea className="w-full whitespace-nowrap ml-3">
+                            <div className="w-full grid grid-cols-2 sm:grid-cols-4  h-20">
                               {imageUrls.map((imageUrls: string, index: number) => (
                                 <div key={`id-${index}`} className="relative overflow-hidden w-20 h-20 rounded-[8px] ">
                                   <img 

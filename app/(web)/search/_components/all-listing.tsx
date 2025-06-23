@@ -22,7 +22,7 @@ const AllListings = ({
     return (
         <div className="w-full">
             <div className="w-full flex items-center justify-between mb-2">
-                <h2 className="text-2xl font-bold text-[#dc2626]">
+                <h2 className="text-2xl font-bold text-gray-400">
                     {listings.length || 0} Cars Found
                 </h2>
                 <div className="flex items-center justify-between gap-4">

@@ -51,7 +51,7 @@ const [sliderValues, setSliderValues] = useState<number[]>([
       <div className="mb-3">
         <div className="flex items-center justify-between rounded-[4px_4px_0_0] bg-[#172554] text-white p-[8px_16px]">
           <h2 className="font-bold text-base">Filters</h2>
-            <Button className="!h-auto text-[#dc2626] font-light !py-0" variant="link" onClick={handleClearAll}>
+            <Button className="!h-auto text-[#dc2626] font-light !px-7 !py-0" variant="link" onClick={handleClearAll}>
              Reset All
             </Button>
         </div>

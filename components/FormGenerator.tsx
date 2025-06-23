@@ -49,7 +49,7 @@ const FormGenerator: React.FC<FormGeneratorProps> = ({
     <div className="grid gap-2">
       {label && (
         <Label {...(!isCustomField ? { htmlFor: fieldId } : {})}
-        style={{ color: "#dc2626"}}
+        style={{ color: "#9CA3AF"}}
         >{label}</Label>
       )}
 

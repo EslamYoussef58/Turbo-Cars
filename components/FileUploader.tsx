@@ -23,12 +23,12 @@ interface FileUploaderProps {
         <div className="flex items-center justify-start">
             <div>
                 <div role="button" {...getRootProps()} className={cn(
-                    `w-20 h-20 cursor-pointer rounded-[8px] bg-red-700`,
+                    `w-20 h-20 cursor-pointer rounded-[8px] bg-white`,
                     uploading && "!pointer-events-none cursor-not-allowed"
                 )}>
                     <div className="relative flex flex-col items-center justify-center h-full">
                         <input {...getInputProps()}/>
-                        <Plus className="h-6 w-6 !text-white"/>
+                        <Plus className="h-6 w-6 !text-black"/>
                         {uploading && (
                             <div className="absolute px-1 inset-0 bg-white backdrop-blur-sm flex flex-col items-center justify-center">
                                 <Progress  value={uploadProgess} className="w-full"/>

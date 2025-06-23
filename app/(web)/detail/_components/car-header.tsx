@@ -27,7 +27,7 @@ const CarHeader = ({
   return (
     <div>
         <div className="mb-3">
-            <h1 className="text-[28px] text-[#dc2626] md:text-[32px] capitalize font-bold">
+            <h1 className="text-[28px] text-gray-400 md:text-[32px] capitalize font-bold">
                 {isPending ? <Skeleton className='h-8 w-4/5'/> : displayTitle}
             </h1>
         </div>
